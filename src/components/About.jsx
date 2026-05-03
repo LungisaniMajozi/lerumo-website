@@ -42,7 +42,7 @@ export default function About() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               href="#contact"
-              className="inline-block px-8 py-3.5 bg-gradient-cyan text-primary font-bold rounded-lg hover:shadow-glow-lg"
+              className="inline-block px-8 py-3.5 bg-gradient-gold text-primary font-bold rounded-lg hover:shadow-glow-lg"
             >
               Get Protected Today
             </motion.a>

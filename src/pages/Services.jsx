@@ -61,7 +61,7 @@ export default function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, duration: 0.5 }}
-              className="glass-dark rounded-[2rem] overflow-hidden border border-white/5 flex flex-col group hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(0,217,255,0.1)] hover:border-accent/40 transition-all duration-500 bg-gradient-to-b from-white/[0.03] to-transparent"
+              className="glass-dark rounded-[2rem] overflow-hidden border border-white/5 flex flex-col group hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(214,168,72,0.1)] hover:border-accent/40 transition-all duration-500 bg-gradient-to-b from-white/[0.03] to-transparent"
             >
               <div className="h-60 w-full overflow-hidden relative">
                 <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
@@ -74,7 +74,7 @@ export default function Services() {
               </div>
               <div className="p-8 relative flex-grow flex flex-col justify-end pt-12">
                 {/* Icon overlapping image and text area */}
-                <div className="absolute -top-10 left-8 w-16 h-16 rounded-2xl bg-accent flex items-center justify-center shadow-[0_0_30px_rgba(0,217,255,0.4)] z-20 group-hover:scale-110 transition-transform duration-500">
+                <div className="absolute -top-10 left-8 w-16 h-16 rounded-2xl bg-accent flex items-center justify-center shadow-[0_0_30px_rgba(214,168,72,0.4)] z-20 group-hover:scale-110 transition-transform duration-500">
                   {srv.icon}
                 </div>
                 <h3 className="text-2xl font-bold text-white mb-3 tracking-wide">{srv.title}</h3>

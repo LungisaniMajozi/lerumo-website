@@ -47,7 +47,7 @@ export default function Home() {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="px-8 py-4 bg-accent text-primary font-bold rounded-lg shadow-[0_0_20px_rgba(0,217,255,0.3)] transition-all hover:bg-accent-light"
+                  className="px-8 py-4 bg-accent text-primary font-bold rounded-lg shadow-[0_0_20px_rgba(214,168,72,0.3)] transition-all hover:bg-accent-light"
                 >
                   Secure My Legacy
                 </motion.button>

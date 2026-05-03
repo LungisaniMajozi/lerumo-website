@@ -122,7 +122,7 @@ export default function Contact() {
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
               type="button"
-              className="w-full mt-2 bg-gradient-cyan text-primary font-bold py-4 rounded-lg shadow-glow hover:shadow-glow-lg transition-all flex items-center justify-center gap-2"
+              className="w-full mt-2 bg-gradient-gold text-primary font-bold py-4 rounded-lg shadow-glow hover:shadow-glow-lg transition-all flex items-center justify-center gap-2"
             >
               Submit Request <Send className="w-4 h-4" />
             </motion.button>

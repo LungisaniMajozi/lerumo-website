@@ -13,7 +13,7 @@ export default function Footer() {
             viewport={{ once: true }}
           >
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-cyan rounded-lg flex items-center justify-center font-bold text-primary">
+              <div className="w-10 h-10 bg-gradient-gold rounded-lg flex items-center justify-center font-bold text-primary">
                 L
               </div>
               <div>
