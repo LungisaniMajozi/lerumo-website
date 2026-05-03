@@ -70,7 +70,7 @@ export default function Services() {
               className="glass rounded-2xl p-8 group cursor-pointer"
             >
               <div className="text-5xl mb-4 group-hover:scale-110 transition-transform">{service.icon}</div>
-              <h3 className="text-xl font-bold mb-2 text-white">{service.title}</h3>
+              <h3 className="text-xl font-bold mb-2 text-text-main">{service.title}</h3>
               <p className="text-text-muted text-sm leading-relaxed">{service.desc}</p>
               <div className="mt-6 pt-6 border-t border-accent/20 flex items-center gap-2 text-accent text-sm font-semibold group-hover:gap-3 transition-all">
                 Learn more

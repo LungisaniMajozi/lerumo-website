@@ -13,13 +13,7 @@ export default function Footer() {
             viewport={{ once: true }}
           >
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-gold rounded-lg flex items-center justify-center font-bold text-primary">
-                L
-              </div>
-              <div>
-                <p className="text-white font-bold">LERUMO</p>
-                <p className="text-accent text-[10px]">PROTECTION</p>
-              </div>
+              <img src="/logo_transparent.png" alt="Lerumo Protection Logo" className="h-20 w-auto object-contain" />
             </div>
             <p className="text-text-muted text-sm">Protecting what matters most since 2024.</p>
           </motion.div>
@@ -31,7 +25,7 @@ export default function Footer() {
             transition={{ delay: 0.1 }}
             viewport={{ once: true }}
           >
-            <h4 className="font-bold text-white mb-4">Quick Links</h4>
+            <h4 className="font-bold text-text-main mb-4">Quick Links</h4>
             <ul className="space-y-2 text-text-muted text-sm">
               <li><Link to="/" className="hover:text-accent transition-colors">Home</Link></li>
               <li><Link to="/about" className="hover:text-accent transition-colors">About Us</Link></li>
@@ -48,7 +42,7 @@ export default function Footer() {
             transition={{ delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <h4 className="font-bold text-white mb-4">Services</h4>
+            <h4 className="font-bold text-text-main mb-4">Services</h4>
             <ul className="space-y-2 text-text-muted text-sm">
               <li>Armed Guards</li>
               <li>Mobile Patrols</li>
@@ -64,7 +58,7 @@ export default function Footer() {
             transition={{ delay: 0.3 }}
             viewport={{ once: true }}
           >
-            <h4 className="font-bold text-white mb-4">Company</h4>
+            <h4 className="font-bold text-text-main mb-4">Company</h4>
             <ul className="space-y-2 text-text-muted text-sm">
               <li>Reg: 2024/553925/07</li>
               <li>TAX: 9081571284</li>

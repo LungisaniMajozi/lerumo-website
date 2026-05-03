@@ -28,7 +28,7 @@ export default function Navbar() {
       animate={{ y: 0 }}
       transition={{ duration: 0.6 }}
       className={`fixed w-full top-0 z-50 transition-all duration-300 ${
-        scrolled ? 'glass-dark py-3 shadow-lg' : 'bg-transparent py-6'
+        scrolled ? 'glass-light py-3 shadow-lg' : 'bg-transparent py-6'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
@@ -38,20 +38,14 @@ export default function Navbar() {
           className="flex items-center gap-2 group block"
         >
           <motion.div whileHover={{ scale: 1.05 }} className="flex items-center gap-2">
-            <div className="w-10 h-10 bg-gradient-gold rounded-lg flex items-center justify-center font-bold text-primary group-hover:shadow-glow transition-all">
-              L
-            </div>
-            <div>
-              <p className="text-white font-bold text-lg">LERUMO</p>
-              <p className="text-accent text-[10px] font-semibold">PROTECTION</p>
-            </div>
+            <img src="/logo_transparent.png" alt="Lerumo Protection Logo" className="h-20 w-auto object-contain" />
           </motion.div>
         </Link>
 
         {/* Desktop menu */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            <motion.div key={link.name} whileHover={{ color: '#D6A848' }}>
+            <motion.div key={link.name} whileHover={{ color: '#D2141E' }}>
               <Link
                 to={link.href}
                 className="text-text-muted hover:text-accent transition-colors text-sm font-medium"
@@ -67,7 +61,7 @@ export default function Navbar() {
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="hidden md:block px-6 py-2.5 bg-gradient-gold text-primary font-bold rounded-lg hover:shadow-glow-lg transition-all"
+            className="hidden md:block px-6 py-2.5 bg-gradient-accent text-primary font-bold rounded-lg hover:shadow-glow-lg transition-all"
           >
             Get Protected
           </motion.button>
@@ -89,7 +83,7 @@ export default function Navbar() {
         <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="md:hidden glass-dark mt-4 mx-6 rounded-xl p-6 space-y-4"
+          className="md:hidden glass-light mt-4 mx-6 rounded-xl p-6 space-y-4"
         >
           {navLinks.map((link) => (
             <Link
@@ -102,7 +96,7 @@ export default function Navbar() {
             </Link>
           ))}
           <Link to="/contact" onClick={() => setIsOpen(false)}>
-            <button className="w-full px-6 py-2.5 bg-gradient-gold text-primary font-bold rounded-lg mt-4">
+            <button className="w-full px-6 py-2.5 bg-gradient-accent text-primary font-bold rounded-lg mt-4">
               Get Protected
             </button>
           </Link>

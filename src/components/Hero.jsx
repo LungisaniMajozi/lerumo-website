@@ -21,7 +21,7 @@ export default function Hero() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2, duration: 0.8 }}
-              className="glass-dark w-fit px-4 py-2 rounded-full mb-6"
+              className="glass-light w-fit px-4 py-2 rounded-full mb-6"
             >
               <span className="text-accent text-sm font-semibold">🛡️ Professional Security Since 2024</span>
             </motion.div>
@@ -55,7 +55,7 @@ export default function Hero() {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="px-8 py-3.5 bg-gradient-gold text-primary font-bold rounded-lg hover:shadow-glow-lg"
+                className="px-8 py-3.5 bg-gradient-accent text-primary font-bold rounded-lg hover:shadow-glow-lg"
               >
                 Get Started
               </motion.button>
@@ -127,7 +127,7 @@ export default function Hero() {
                   >
                     <defs>
                       <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stopColor="#D6A848" />
+                        <stop offset="0%" stopColor="#D2141E" />
                         <stop offset="100%" stopColor="#0099bb" />
                       </linearGradient>
                     </defs>
@@ -143,19 +143,19 @@ export default function Hero() {
                     <path
                       d="M100 40 L160 75 L160 130 C160 170 100 205 100 205 C100 205 40 170 40 130 L40 75 Z"
                       fill="none"
-                      stroke="#D6A848"
+                      stroke="#D2141E"
                       strokeWidth="2.5"
                     />
                     {/* Center circle */}
-                    <circle cx="100" cy="100" r="35" fill="none" stroke="#D6A848" strokeWidth="2" />
+                    <circle cx="100" cy="100" r="35" fill="none" stroke="#D2141E" strokeWidth="2" />
                     {/* Center dot */}
-                    <circle cx="100" cy="100" r="8" fill="#D6A848" />
+                    <circle cx="100" cy="100" r="8" fill="#D2141E" />
                     {/* Text */}
                     <text
                       x="100"
                       y="220"
                       textAnchor="middle"
-                      fill="#D6A848"
+                      fill="#D2141E"
                       fontSize="32"
                       fontWeight="bold"
                     >

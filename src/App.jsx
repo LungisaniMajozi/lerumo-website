@@ -12,7 +12,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <div className="min-h-screen bg-primary flex flex-col text-text-light font-body">
+      <div className="min-h-screen bg-primary flex flex-col text-text-main font-body">
         <Navbar />
         <main className="flex-grow">
           <Routes>

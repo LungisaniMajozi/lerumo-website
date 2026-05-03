@@ -49,7 +49,7 @@ export default function Contact() {
             >
               <div className="text-4xl mb-3">{item.icon}</div>
               <p className="text-text-muted text-sm mb-1">{item.label}</p>
-              <p className="text-white font-semibold">{item.value}</p>
+              <p className="text-text-main font-semibold">{item.value}</p>
             </motion.div>
           ))}
         </div>
@@ -70,7 +70,7 @@ export default function Contact() {
               value={formData.name}
               onChange={(e) => setFormData({ ...formData, name: e.target.value })}
               required
-              className="w-full bg-white/5 border border-accent/20 rounded-lg px-4 py-3 text-white placeholder-text-muted focus:outline-none focus:border-accent transition-all"
+              className="w-full bg-black/5 border border-accent/20 rounded-lg px-4 py-3 text-text-main placeholder-text-muted focus:outline-none focus:border-accent transition-all"
             />
             <input
               type="email"
@@ -78,7 +78,7 @@ export default function Contact() {
               value={formData.email}
               onChange={(e) => setFormData({ ...formData, email: e.target.value })}
               required
-              className="w-full bg-white/5 border border-accent/20 rounded-lg px-4 py-3 text-white placeholder-text-muted focus:outline-none focus:border-accent transition-all"
+              className="w-full bg-black/5 border border-accent/20 rounded-lg px-4 py-3 text-text-main placeholder-text-muted focus:outline-none focus:border-accent transition-all"
             />
           </div>
 
@@ -86,7 +86,7 @@ export default function Contact() {
             value={formData.service}
             onChange={(e) => setFormData({ ...formData, service: e.target.value })}
             required
-            className="w-full bg-white/5 border border-accent/20 rounded-lg px-4 py-3 text-white mb-6 focus:outline-none focus:border-accent transition-all"
+            className="w-full bg-black/5 border border-accent/20 rounded-lg px-4 py-3 text-text-main mb-6 focus:outline-none focus:border-accent transition-all"
           >
             <option value="">Select a Service</option>
             <option value="armed">Armed & Unarmed Guards</option>
@@ -103,14 +103,14 @@ export default function Contact() {
             value={formData.message}
             onChange={(e) => setFormData({ ...formData, message: e.target.value })}
             required
-            className="w-full bg-white/5 border border-accent/20 rounded-lg px-4 py-3 text-white placeholder-text-muted focus:outline-none focus:border-accent transition-all mb-6 resize-none"
+            className="w-full bg-black/5 border border-accent/20 rounded-lg px-4 py-3 text-text-main placeholder-text-muted focus:outline-none focus:border-accent transition-all mb-6 resize-none"
           />
 
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             type="submit"
-            className="w-full px-8 py-4 bg-gradient-gold text-primary font-bold rounded-lg hover:shadow-glow-lg transition-all"
+            className="w-full px-8 py-4 bg-gradient-accent text-primary font-bold rounded-lg hover:shadow-glow-lg transition-all"
           >
             {submitted ? '✓ Message Sent!' : 'Send Message'}
           </motion.button>

@@ -3,12 +3,12 @@ import { Shield, Car, Users, Cctv, Building2, HardHat, Award, Target, Monitor, S
 
 export default function Services() {
   const services = [
-    { icon: <Shield className="w-6 h-6 text-primary" />, title: "Armed & Unarmed Guards", desc: "On-site protection, access control, and patrol duties", image: "/assets/hero_guards_1777789748724.png" },
-    { icon: <Car className="w-6 h-6 text-primary" />, title: "Mobile Patrol Units", desc: "Scheduled and random drive-through patrols in marked vehicles", image: "/assets/event_security_1777789795848.png" },
-    { icon: <Users className="w-6 h-6 text-primary" />, title: "Event Security", desc: "Crowd control, perimeter security, and guest screening", image: "/assets/event_security_1777789795848.png" },
-    { icon: <Cctv className="w-6 h-6 text-primary" />, title: "Surveillance Monitoring", desc: "24/7 CCTV monitoring and alert response", image: "/assets/surveillance_room_1777789764428.png" },
-    { icon: <Building2 className="w-6 h-6 text-primary" />, title: "Executive Protection", desc: "Close protection for VIPs and high-risk individuals", image: "/assets/executive_protection_1777789779263.png" },
-    { icon: <HardHat className="w-6 h-6 text-primary" />, title: "Construction & Industrial", desc: "Theft prevention and site safety during off-hours", image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&auto=format&fit=crop&q=60" }
+    { icon: <Shield className="w-6 h-6 text-primary" />, title: "Armed & Unarmed Guards", desc: "On-site protection, access control, and patrol duties", image: "/images/offecer1.jpeg" },
+    { icon: <Car className="w-6 h-6 text-primary" />, title: "Mobile Patrol Units", desc: "Scheduled and random drive-through patrols in marked vehicles", image: "/images/transport.jpeg" },
+    { icon: <Users className="w-6 h-6 text-primary" />, title: "Event Security", desc: "Crowd control, perimeter security, and guest screening", image: "/images/offecer2.jpeg" },
+    { icon: <Cctv className="w-6 h-6 text-primary" />, title: "Surveillance Monitoring", desc: "24/7 CCTV monitoring and alert response", image: "/images/cctv.jpeg" },
+    { icon: <Building2 className="w-6 h-6 text-primary" />, title: "Executive Protection", desc: "Close protection for VIPs and high-risk individuals", image: "/images/offecer3.jpeg" },
+    { icon: <HardHat className="w-6 h-6 text-primary" />, title: "Construction & Industrial", desc: "Theft prevention and site safety during off-hours", image: "/images/offecer4.jpeg" }
   ]
 
   const advantages = [
@@ -37,7 +37,7 @@ export default function Services() {
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-4xl md:text-5xl font-display font-bold text-white mb-6"
+          className="text-4xl md:text-5xl font-display font-bold text-text-main mb-6"
         >
           The Protection <span className="text-accent italic">Suite</span>
         </motion.h1>
@@ -61,7 +61,7 @@ export default function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1, duration: 0.5 }}
-              className="glass-dark rounded-[2rem] overflow-hidden border border-white/5 flex flex-col group hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(214,168,72,0.1)] hover:border-accent/40 transition-all duration-500 bg-gradient-to-b from-white/[0.03] to-transparent"
+              className="glass-light rounded-[2rem] overflow-hidden border border-black/5 flex flex-col group hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(210,20,30,0.1)] hover:border-accent/40 transition-all duration-500 bg-gradient-to-b from-white/[0.03] to-transparent"
             >
               <div className="h-60 w-full overflow-hidden relative">
                 <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors duration-500 z-10"></div>
@@ -74,10 +74,10 @@ export default function Services() {
               </div>
               <div className="p-8 relative flex-grow flex flex-col justify-end pt-12">
                 {/* Icon overlapping image and text area */}
-                <div className="absolute -top-10 left-8 w-16 h-16 rounded-2xl bg-accent flex items-center justify-center shadow-[0_0_30px_rgba(214,168,72,0.4)] z-20 group-hover:scale-110 transition-transform duration-500">
+                <div className="absolute -top-10 left-8 w-16 h-16 rounded-2xl bg-accent flex items-center justify-center shadow-[0_0_30px_rgba(210,20,30,0.4)] z-20 group-hover:scale-110 transition-transform duration-500">
                   {srv.icon}
                 </div>
-                <h3 className="text-2xl font-bold text-white mb-3 tracking-wide">{srv.title}</h3>
+                <h3 className="text-2xl font-bold text-text-main mb-3 tracking-wide">{srv.title}</h3>
                 <p className="text-text-muted text-base leading-relaxed">{srv.desc}</p>
               </div>
             </motion.div>
@@ -86,7 +86,7 @@ export default function Services() {
       </section>
 
       {/* The Lerumo Advantage */}
-      <section className="py-24 max-w-7xl mx-auto px-6 mt-12 border-t border-white/5">
+      <section className="py-24 max-w-7xl mx-auto px-6 mt-12 border-t border-black/5">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left Content */}
           <motion.div
@@ -95,7 +95,7 @@ export default function Services() {
             viewport={{ once: true }}
           >
             <p className="text-accent text-sm font-bold tracking-widest uppercase mb-4">Why Choose Us</p>
-            <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">
+            <h2 className="text-4xl md:text-5xl font-display font-bold text-text-main mb-6">
               The Lerumo <span className="text-accent italic">Advantage</span>
             </h2>
             <p className="text-text-muted mb-10 text-lg">
@@ -109,7 +109,7 @@ export default function Services() {
                     <div className="scale-75">{adv.icon}</div>
                   </div>
                   <div>
-                    <h3 className="font-bold text-white text-sm mb-1">{adv.title}</h3>
+                    <h3 className="font-bold text-text-main text-sm mb-1">{adv.title}</h3>
                     <p className="text-text-muted text-xs leading-relaxed">{adv.desc}</p>
                   </div>
                 </div>
@@ -128,7 +128,7 @@ export default function Services() {
             <div className="absolute inset-0 border-2 border-accent/30 rounded-[40px] translate-y-8 -translate-x-8 -z-10"></div>
 
             <img
-              src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?w=800&auto=format&fit=crop&q=60"
+              src="/images/offecer1.jpeg"
               alt="Team discussing advantage"
               className="w-full h-full object-cover rounded-[40px] shadow-2xl relative z-10"
             />
@@ -137,7 +137,7 @@ export default function Services() {
       </section>
 
       {/* Target Markets */}
-      <section className="py-20 max-w-7xl mx-auto px-6 border-t border-white/5">
+      <section className="py-20 max-w-7xl mx-auto px-6 border-t border-black/5">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-display font-bold mb-4">Target <span className="text-accent italic">Markets</span></h2>
         </div>
@@ -150,7 +150,7 @@ export default function Services() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.05 }}
-              className="px-6 py-3 glass rounded-full border border-white/10 text-white text-sm md:text-base font-medium hover:border-accent hover:text-accent transition-colors"
+              className="px-6 py-3 glass rounded-full border border-black/10 text-text-main text-sm md:text-base font-medium hover:border-accent hover:text-accent transition-colors"
             >
               {market}
             </motion.div>

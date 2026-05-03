@@ -42,7 +42,7 @@ export default function About() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               href="#contact"
-              className="inline-block px-8 py-3.5 bg-gradient-gold text-primary font-bold rounded-lg hover:shadow-glow-lg"
+              className="inline-block px-8 py-3.5 bg-gradient-accent text-primary font-bold rounded-lg hover:shadow-glow-lg"
             >
               Get Protected Today
             </motion.a>
@@ -68,7 +68,7 @@ export default function About() {
                 <div className="flex items-start gap-4">
                   <span className="text-3xl mt-1">{value.icon}</span>
                   <div className="flex-1">
-                    <h3 className="font-bold text-lg text-white mb-1">{value.label}</h3>
+                    <h3 className="font-bold text-lg text-text-main mb-1">{value.label}</h3>
                     <p className="text-text-muted text-sm">{value.desc}</p>
                   </div>
                 </div>

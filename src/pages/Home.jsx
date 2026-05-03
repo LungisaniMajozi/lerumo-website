@@ -6,15 +6,14 @@ export default function Home() {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
-        {/* Background Image with Overlay */}
+      <section className="relative min-h-screen flex items-center pt-32 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/assets/hero_guards_1777789748724.png" 
-            alt="Professional Black security guards" 
-            className="w-full h-full object-cover object-top opacity-[0.15]"
+            src="/images/home.jpeg" 
+            alt="Lerumo Security Guards" 
+            className="w-full h-full object-cover object-top"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/95 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/70 to-white/20"></div>
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
@@ -25,13 +24,13 @@ export default function Home() {
             className="max-w-3xl"
           >
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 glass-dark mb-8">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-black/10 glass-light mb-8">
               <ShieldCheck className="w-4 h-4 text-accent" />
-              <span className="text-sm font-medium text-white">Professional Security Since 2024</span>
+              <span className="text-sm font-medium text-text-main">Professional Security Since 2024</span>
             </div>
 
             {/* Heading */}
-            <h1 className="text-6xl md:text-8xl font-display font-bold mb-6 text-white tracking-tight leading-[1.1]">
+            <h1 className="text-6xl md:text-8xl font-display font-bold mb-6 text-text-main tracking-tight leading-[1.1]">
               Your Legacy,<br />
               <span className="text-accent italic">Shielded.</span>
             </h1>
@@ -47,7 +46,7 @@ export default function Home() {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="px-8 py-4 bg-accent text-primary font-bold rounded-lg shadow-[0_0_20px_rgba(214,168,72,0.3)] transition-all hover:bg-accent-light"
+                  className="px-8 py-4 bg-accent text-primary font-bold rounded-lg shadow-[0_0_20px_rgba(210,20,30,0.3)] transition-all hover:bg-accent-light"
                 >
                   Secure My Legacy
                 </motion.button>
@@ -56,7 +55,7 @@ export default function Home() {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className="px-8 py-4 bg-white/5 text-white font-medium rounded-lg hover:bg-white/10 transition-all border border-white/10 flex items-center gap-2"
+                  className="px-8 py-4 bg-black/5 text-text-main font-medium rounded-lg hover:bg-black/10 transition-all border border-black/10 flex items-center gap-2"
                 >
                   Explore Services <ArrowRight className="w-4 h-4" />
                 </motion.button>
@@ -64,7 +63,7 @@ export default function Home() {
             </div>
 
             {/* Stats Row */}
-            <div className="grid grid-cols-3 gap-8 max-w-2xl border-t border-white/10 pt-8">
+            <div className="grid grid-cols-3 gap-8 max-w-2xl border-t border-black/10 pt-8">
               <div>
                 <p className="text-3xl md:text-4xl font-display font-bold text-accent mb-1 italic">24/7</p>
                 <p className="text-text-muted text-sm">Monitoring</p>

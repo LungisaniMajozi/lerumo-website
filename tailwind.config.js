@@ -12,13 +12,13 @@ export default {
         'sora': ['"Sora"', 'sans-serif'],
       },
       colors: {
-        'primary': '#111520',
-        'secondary': '#1A2030',
-        'accent': '#D6A848',
-        'accent-dark': '#B88F35',
-        'accent-light': '#F0CB6E',
-        'text-light': '#F8FAFC',
-        'text-muted': '#94A3B8',
+        'primary': '#FFFFFF',
+        'secondary': '#F8FAFC',
+        'accent': '#C81414',
+        'accent-dark': '#A01414',
+        'accent-light': '#F01414',
+        'text-main': '#000000',
+        'text-muted': '#4B5563',
       },
       animation: {
         'gradient-shift': 'gradient-shift 8s ease infinite',
@@ -37,8 +37,8 @@ export default {
           '50%': { transform: 'translateY(-20px) rotate(1deg)' },
         },
         'glow-pulse': {
-          '0%, 100%': { boxShadow: '0 0 20px rgba(214, 168, 72, 0.3)' },
-          '50%': { boxShadow: '0 0 40px rgba(214, 168, 72, 0.6)' },
+          '0%, 100%': { boxShadow: '0 0 20px rgba(200, 20, 20, 0.3)' },
+          '50%': { boxShadow: '0 0 40px rgba(200, 20, 20, 0.6)' },
         },
         'slide-up': {
           'from': { opacity: '0', transform: 'translateY(40px)' },
