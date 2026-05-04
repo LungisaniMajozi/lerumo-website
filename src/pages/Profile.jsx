@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Building2, FileText, Target, Crosshair } from 'lucide-react'
+import { Building2, FileText, Crosshair } from 'lucide-react'
 
 export default function Profile() {
   return (
@@ -65,22 +65,7 @@ export default function Profile() {
           </p>
         </motion.div>
 
-        {/* Business Objectives */}
-        <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="glass-light p-8 md:p-12 rounded-3xl"
-        >
-          <h2 className="text-2xl font-display font-bold text-accent mb-6 flex items-center gap-3 border-b border-black/10 pb-4">
-            <Target className="text-accent" /> Business Objectives
-          </h2>
-          <ul className="space-y-4 text-text-main list-disc pl-6 marker:text-accent">
-            <li><strong className="font-semibold">Year 1:</strong> Establish operations and secure 5–7 long-term contracts</li>
-            <li><strong className="font-semibold">Year 2:</strong> Expand to 3 additional metro areas and launch a mobile app for real-time guard reporting</li>
-            <li><strong className="font-semibold">Year 3:</strong> Achieve $1M+ in annual revenue and obtain federal and state-level security certifications</li>
-          </ul>
-        </motion.div>
+
 
         {/* Mission Statement */}
         <motion.div 
